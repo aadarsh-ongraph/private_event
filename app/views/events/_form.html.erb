@@ -1,0 +1,26 @@
+<%= form_with model:@event do |f| %>
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div>
+    <%= f.label :date %>
+    <%= f.datetime_select :date %>
+  </div>
+  <div>
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+  </div>
+  <div>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div>
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id%>
+  </div>
+  <div>
+    <%= f.submit 'Save Event' %>
+  </div>
+<% end %>

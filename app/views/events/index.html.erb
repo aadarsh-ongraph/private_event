@@ -1,0 +1,10 @@
+<h1>All Events</h1>
+<ul>
+  <% @events.each do |event| %>
+   <div class="container2">
+    <li><%= link_to event.title, event %></li>
+    </div>
+  <% end %>
+</ul>
+
+<%= link_to 'Create Event', 'events/new' %>
